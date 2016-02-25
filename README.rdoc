@@ -1,28 +1,29 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Building Recipe Book by https://youtu.be/QhdzE1yNs-0?list=PL8XO9gnqAQfwLJJRqaq69RZOjpX-IWusF
 
-Things you may want to cover:
+* Ruby version 2.1.2
 
-* Ruby version
+* Rails version 4.2.4
 
-* System dependencies
+* server- any unix os
 
-* Configuration
+* Database postgres (req. heroku)
 
-* Database creation
+* Deployment from http://railstutorial.ru/chapters/4_0/a-demo-app#top
 
-* Database initialization
+- when edit Gemfile - do bundle
 
-* How to run the test suite
+- do ->   rake assets:precompile    for working styles
+          git add .
+          git commit -am 'deploy heroku'
 
-* Services (job queues, cache servers, search engines, etc.)
+- git push heroku master
+      (или привязать локальный репозиторий как удаленный:
+                      heroku git:remote -a имя_имя_субдомена_сайта(mysite))
+- heroku run rake db:migrate --app
 
-* Deployment instructions
 
-* ...
+App at production -
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+31:00 - paperclip

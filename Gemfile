@@ -11,6 +11,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 #Add new gems
+gem 'haml'
+gem 'simple_form', '~> 3.2', '>= 3.2.1'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+gem 'paperclip', '~> 4.3', '>= 4.3.5'
 
 
 group :development, :test do
