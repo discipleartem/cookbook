@@ -27,3 +27,47 @@ Building Recipe Book by https://youtu.be/QhdzE1yNs-0?list=PL8XO9gnqAQfwLJJRqaq69
 App at production -
 
 1:00:04
+
+If have problem with bcrypt -
+
+use:
+$ gem install bundler
+$ gem install bcrypt
+$ bundle update bcrypt
+
+-------------------------------------------
+
+SqLite3 LoadError: incompatible library version -
+
+ http://stackoverflow.com/questions/37365791/sqlite3-loaderror-incompatible-library-version
+
+
+Need to use lower version of sqlite3 gem (1.3.10) instead v. 1.3.11 Before if needed uninstall all gems and write to Gemfile:
+
+gem 'sqlite3', '~> 1.3', '>= 1.3.10'
+and use $ bundle install
+
+It's helps me
+
+
+-----------------------------------------
+
+пробдемы с Ubuntu 16.04 repository
+
+http://askubuntu.com/questions/124017/how-do-i-restore-the-default-repositories
+
+-----------------------------------------
+
+how uninstall all gems
+
+http://stackoverflow.com/questions/8095209/uninstall-all-installed-gems-in-osx
+
+gem uninstall -aIx
+-----------------------------------------
+
+Your Ruby version is 2.3.0, but your Gemfile specified 2.1.2
+
+http://stackoverflow.com/questions/23039528/your-ruby-version-is-2-0-0-but-your-gemfile-specified-2-1-0
+
+$ gem install  bundler
+-----------------------------------------
