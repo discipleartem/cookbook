@@ -39,7 +39,7 @@ $ bundle update bcrypt
 
 SqLite3 LoadError: incompatible library version -
 
- http://stackoverflow.com/questions/37365791/sqlite3-loaderror-incompatible-library-version
+http://stackoverflow.com/questions/37365791/sqlite3-loaderror-incompatible-library-version
 
 
 Need to use lower version of sqlite3 gem (1.3.10) instead v. 1.3.11 Before if needed uninstall all gems and write to Gemfile:
